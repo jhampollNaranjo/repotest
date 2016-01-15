@@ -19,7 +19,7 @@
                         <div class="form-group">
                             <input type="text" class="form-control col-md-6" name="buscar" placeholder="Buscar">
                         </div>
-                        <button type="submit" class="btn btn-primary col-md-6">Buscar</button>
+                        <button type="submit" class="btn btn-danger col-md-6">Buscar</button>
                     </div>
                 </form>
                 <div class="table-responsive">
