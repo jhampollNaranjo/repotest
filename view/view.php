@@ -14,6 +14,14 @@
     <div class="container">
         <div class="col-md-6">
             <div class="row">
+                <form class="form-inline">
+                    <div class="row">    
+                        <div class="form-group">
+                            <input type="text" class="form-control col-md-6" name="buscar" placeholder="Buscar">
+                        </div>
+                        <button type="submit" class="btn btn-danger col-md-6">Buscar</button>
+                    </div>
+                </form>
                 <div class="table-responsive">
                     <table  class="table">
                         <thead>
@@ -34,6 +42,7 @@
                             </tr>
                         </tbody>
                         <?php endforeach;?>
+                        
                     </table>
                 </div>
                 <a href="adduser.php"  class="btn btn-primary btn-sm">agregar</a>
