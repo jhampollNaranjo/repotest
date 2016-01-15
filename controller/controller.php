@@ -15,7 +15,7 @@
 
 	if (isset($_POST['submitted'])) {
 		$datos=new user_model();
-		$datos->add_user($_POST['name'],$_POST['last_name']);
+		$datos->add_user($_POST['name'],$_POST['last_name'],$_POST['age']);
 		header('location:../view/view.php');
 		
 	}

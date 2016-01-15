@@ -6,12 +6,14 @@
     <tr>
       <td>name</td>
       <td>last name</td>
+      <td>Age</td>
     </tr>
     
     <?php foreach($datos as $row): ?>
     <tr>
         <td><?php echo $row['name']?></td>
         <td><?php echo $row['last_name']?></td>
+        <td><?php echo $row['edad']?></td>
         <td><a href="../controller/controller.php?id=<?php echo $row['id']?>">Eliminar</a></td>
     </tr>
 <?php endforeach;?>

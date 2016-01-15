@@ -21,8 +21,8 @@
             $sql=$this->db->query("DELETE FROM usuario WHERE id =$id");
         }
 
-        public function add_user($nam,$ln){
-             $sql=$this->db->query("INSERT INTO usuario VALUES (NULL,'$nam','$ln')");
+        public function add_user($nam,$ln,$age){
+             $sql=$this->db->query("INSERT INTO usuario VALUES (NULL,'$nam','$ln','$age')");
         }
     }
 ?>
