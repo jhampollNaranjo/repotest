@@ -10,7 +10,7 @@
     <?php 
     	require_once('../controller/controller.php');
      ?>
-    <h1 class="text-center">Listado de Users</h1>
+    <h1 class="text-center">Listado de Users  buscador</h1>
     <div class="container">
         <div class="col-md-6">
             <div class="row">
