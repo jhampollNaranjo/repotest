@@ -13,27 +13,29 @@
     <h1 class="text-center">Listado de Users</h1>
     <div class="container">
         <div class="col-md-6">
-            <div class="row table-responsive">
-                <table  class="table">
-                    <thead>
-                        <tr>
-                            <th>name</th>
-                            <th>last name</th>
-                            <th>Age</th>
-                        </tr>
-                    </thead>
-                    
-                    <?php foreach($datos as $row): ?>
-                    <tbody>
-                        <tr>
-                            <td><?php echo $row['name']?></td>
-                            <td><?php echo $row['last_name']?></td>
-                            <td><?php echo $row['edad']?></td>
-                            <td><a href="../controller/controller.php?id=<?php echo $row['id']?>">Eliminar</a></td>
-                        </tr>
-                    </tbody>
-                    <?php endforeach;?>
-                </table>
+            <div class="row">
+                <div class="table-responsive">
+                    <table  class="table">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>last name</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        
+                        <?php foreach($datos as $row): ?>
+                        <tbody>
+                            <tr>
+                                <td><?php echo $row['name']?></td>
+                                <td><?php echo $row['last_name']?></td>
+                                <td><?php echo $row['edad']?></td>
+                                <td><a href="../controller/controller.php?id=<?php echo $row['id']?>">Eliminar</a></td>
+                            </tr>
+                        </tbody>
+                        <?php endforeach;?>
+                    </table>
+                </div>
                 <a href="adduser.php"  class="btn btn-primary btn-sm">agregar</a>
             </div>
         </div>
